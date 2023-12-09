@@ -140,24 +140,34 @@
             background-color: #219653;
         }
 
-        .social-media-icons img {
-            max-width: 30px;
+        .social-media-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #3498db;
+            /* Choose your desired background color */
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .social-media-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            max-width: 40px;
+            /* Adjust the maximum width as needed */
             height: auto;
-            margin: 0 5px;
+            margin: 0 10px;
+            /* Adjust the margin between icons as needed */
             transition: transform 0.3s ease-in-out;
         }
 
-        .social-media-icons img:hover {
+        .social-icon:hover {
             transform: scale(1.2);
-        }
-
-        .social-media-icons img {
-            max-width: 30px;
-            /* Adjust the size as needed */
-            height: auto;
-            margin: 0 5px;
-            /* Add some spacing between icons */
-        }
+        }   
 
         footer {
             text-align: center;
@@ -431,6 +441,7 @@
         <p>LinkedIn: <a href="https://www.linkedin.com/in/sprb" target="_blank">https://www.linkedin.com/in/sprb</a></p>
     </section>
 
+    <br>
     <div align="center" class="social-media-icons">
         <a href="https://www.linkedin.com/in/sprb" target="_blank"><img src="ln.webp" alt="LinkedIn"
                 class="social-icon"></a>
@@ -438,7 +449,6 @@
                 class="social-icon"></a>
         <a href="YOUR_GITHUB_PROFILE_URL" target="_blank"><img src="Github.png" alt="GitHub" class="social-icon"></a>
         <a href="Email" target="_blank"><img src="Email.png" alt="Email" class="social-icon"></a>
-        <!-- Add more social media icons as needed -->
     </div>
 
 
