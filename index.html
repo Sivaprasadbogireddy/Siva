@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,13 +21,20 @@
         }
 
         img {
-            max-width: 100%;
+            max-width: 150px;
+            /* Set the maximum width of the image */
             height: auto;
             border-radius: 50%;
         }
 
         section {
             margin-top: 20px;
+            text-align: center;
+            /* Center the content within each section */
+            padding: 20px;
+            background-color: #f4f4f4;
+            /* Light gray background color */
+            border-radius: 10px;
         }
 
         h2 {
@@ -43,6 +49,42 @@
         li {
             margin-bottom: 10px;
         }
+
+        a {
+            color: #0066cc;
+            /* Set hyperlink color to a shade of blue */
+            text-decoration: none;
+            /* Remove default underline */
+        }
+
+        a:hover {
+            text-decoration: underline;
+            /* Add underline on hover */
+        }
+
+        .profile-section {
+            margin-top: 20px;
+        }
+
+        .skills-section,
+        .experience-section,
+        .projects-section,
+        .workshops-section,
+        .achievements-section,
+        .contact-section {
+            margin-top: 20px;
+        }
+
+        .appointment-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -50,42 +92,178 @@
 
     <header>
         <h1>Sivaprasad Reddy Bogireddy</h1>
-        <img src="path/to/your/profile/image.jpg" alt="Your Profile Image">
+        <img src="Siva_Pic.jpg" alt="Siva Image">
     </header>
 
-    <section>
-        <h2 style="text-align: center;">Schooling</h2>
+    <section id="schooling">
+        <h2>Schooling</h2>
         <ul>
-            <li>Master’s in Computer Science, Wichita State University, USA (Aug 2022 - Present)</li>
-            <li>Bachelor’s in Electronics and Comm. Engg., Lovely Professional University, India (Jul 2019 - Jun 2022)
+            <li><a href="https://www.wichita.edu/" target="_blank">Master’s in Computer Science, Wichita State
+                    University, USA</a> (Aug 2022 - Present)
             </li>
-            <li>Diploma in Electronics and Comm. Engg., Loyola Polytechnic YSRR, India (Jun 2016 - May 2019)</li>
+            <li><a href="https://www.lpu.in/" target="_blank">Bachelor’s in Electronics and Comm. Engg., Lovely
+                    Professional University, India</a> (Jul 2019 - Jun 2022)
+            </li>
+            <li><a href="http://loyolapoly.ac.in/" target="_blank">Diploma in Electronics and Comm. Engg., Loyola
+                    Polytechnic YSRR, India</a> (Jun 2016 - May 2019)
+            </li>
         </ul>
     </section>
 
-    <section>
+    <section class="skills-section">
         <h2>Skills</h2>
-        <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-            <!-- Add more skills as needed -->
-        </ul>
+        <p>Programming Languages/Databases: C Programming, Java, Python, SQL, MySQL.</p>
+        <p>Web Technologies: HTML, CSS, JavaScript.</p>
+        <p>Frameworks: Spring boot, Angular</p>
+        <p>Version Control: GitHub (Profile: Sivawsu), GitLab (Profile:Sivawsu)</p>
+        <p>Tools/OS: Postman, Jira, Android Studio, Microsoft Office Software, Windows, Linux</p>
+        <p>DSA Problem Solving: Leetcode (Profile: Sivaprasadb), HackerRank (Profile: sivaprasadredd26)</p>
     </section>
 
-    <section>
-        <h2>Work Experience</h2>
-        <ul>
-            <li>Job Title, Company Name - Duration</li>
-            <li>Job Title, Company Name - Duration</li>
-            <!-- Add more work experience as needed -->
-        </ul>
+    <section id="experience" class="experience-section">
+        <h2>Relevant/Other Experience</h2>
+        <div>
+            <h3>Graduate Teaching Assistant (Jan 2023 – Present)</h3>
+            <p>Wichita State University, Wichita, KS</p>
+            <ul>
+                <li>Helping the instructor with respect to class Materials, Grading the assignments</li>
+                <li>Helping the students by providing the course-related doubts via student hours</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Research Aide Technical – Intern (Jun 2023 - Aug 2023)</h3>
+            <p>Argonne National Laboratory, Chicago, United States</p>
+            <ul>
+                <li>Collaborated under the guidance of Dr. HongZhang and Dr. Abu Asaduzzaman on enhancing PETSc
+                    DMNetwork
+                    Libraries for modeling business entities in a geospatial cyberinfrastructure.</li>
+                <li>Contributed to the generation of traffic data from cameras and integration into the PETSc
+                    Traffic_Flow_Business_Model.</li>
+                <li>Worked on modeling a Geospatial Cyberinfrastructure (GCI) using PETSc DMNetwork with a focus on
+                    Exascale
+                    computing.</li>
+                <li>Conducted simulations of the GCI to facilitate business data analysis, showcasing the practical
+                    applications of high-performance computing.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Associate Intern (Jul 2021 – Jun 2022)</h3>
+            <p>Lutron Electronics, Gurgaon, India</p>
+            <ul>
+                <li>Provided technical application solutions and support for Lutron's global projects, specializing in
+                    lighting control and shading solutions for commercial projects.</li>
+                <li>Developed detailed product and sales proposals, including budget estimates, during the project
+                    specification phase.</li>
+                <li>Created control system schematics using Lutron Designer, ensuring accurate and efficient control
+                    system implementation.</li>
+                <li>Played a crucial role in offering technical support and solutions across various facets of Lutron's
+                    operations, contributing to the success of integrated systems projects.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Publications Tutor (Jan 2020 – May 2022)</h3>
+            <p>Maanya’s MGB Publications, Tirupati, India</p>
+            <ul>
+                <li>Collaborated to identify students’ goals. Helping the Helping the Author with relevant content.</li>
+            </ul>
+        </div>
     </section>
 
-    <section>
-        <h2>Current Activity</h2>
-        <p>Brief description of your current activity or occupation.</p>
+    <!-- Add more sections for projects, workshops, achievements, and contact -->
+
+    <!-- ... (previous HTML code) ... -->
+    
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div>
+            <h3>Machine Learning Based Car Data Prediction for Business Analysis using PETSc Library (Su-Fall 2023)</h3>
+            <ul>
+                <li>Developed a Python script to monitor real-time traffic intensity using advanced computer vision
+                    techniques, specifically utilizing OpenCV with the Background Subtraction Algorithm and the YOLO (You
+                    Only Look Once) model.</li>
+                <li>Implemented a machine learning model to forecast future traffic intensity, enabling businesses to make
+                    data-driven decisions to optimize profits.</li>
+            </ul>
+        </div>
+    
+        <div>
+            <h3>Book Store Management Using Flask and SQL (Summer 2023)</h3>
+            <ul>
+                <li>Developed a basic bookstore management system using Python, HTML, CSS, Flask, and SQLite, primarily
+                    focusing on CRUD (Create, Read, Update, Delete) operations for bookstore data.</li>
+                <li>Implemented features for efficient inventory management, user-friendly web interface, and essential
+                    tools
+                    for managing and interacting with bookstore data, optimizing overall bookstore operations.</li>
+            </ul>
+        </div>
+    
+        <!-- Add more project details as needed -->
     </section>
+    
+    <section id="workshops" class="workshops-section">
+        <h2>Workshops/Achievements</h2>
+        <div>
+            <h3>Solved 340+ Leetcode (DSA) Problems Mar 2023</h3>
+            <ul>
+                <li>Profile: sivaprasadb</li>
+            </ul>
+        </div>
+    
+        <div>
+            <h3>5 Star HackerRank Java Gold Badge Jan 2023</h3>
+            <ul>
+                <li>Profile: sivaprasadredd26</li>
+            </ul>
+        </div>
+    
+        <div>
+            <h3>Participated in Workshop on Artificial Intelligence and Machine Learning Nov 2019</h3>
+            <ul>
+                <li>Student Research and Project Cell (DSW), Lovely Professional University, India</li>
+            </ul>
+        </div>
+    
+        <!-- Add more workshop and achievement details as needed -->
+    </section>
+    
+    <!-- ... (remaining HTML code) ... -->
+
+
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <p>Want to Book Appointment (Online)? <a href="#book-appointment" class="appointment-button">Click Here</a></p>
+        <p>Email: siva.sotc@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sprb" target="_blank">https://www.linkedin.com/in/sprb</a></p>
+    </section>
+
+    <div align="center" class="social-media-icons">
+        <a href="https://www.linkedin.com/in/sprb" target="_blank"><img src="ln.webp" alt="LinkedIn"
+                class="social-icon"></a>
+        <a href="https://www.youtube.com/c/SOTCEDU" target="_blank"><img src="Youtube_logo.png" alt="YouTube"
+                class="social-icon"></a>
+        <a href="YOUR_GITHUB_PROFILE_URL" target="_blank"><img src="Github.png" alt="GitHub" class="social-icon"></a>
+        <a href="Email" target="_blank"><img src="Email.png" alt="Email" class="social-icon"></a>
+        <!-- Add more social media icons as needed -->
+    </div>
+    
+    <style>
+        /* Add this style to your existing styles */
+        .social-media-icons img {
+            max-width: 30px;
+            /* Adjust the size as needed */
+            height: auto;
+            margin: 0 5px;
+            /* Add some spacing between icons */
+        }
+    </style>
+
+
+    <footer>
+        <p align="center">&copy; 2023 Sivaprasad Reddy’s Profile</p>
+    </footer>
 
 </body>
 
