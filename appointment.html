@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include Datepicker library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/datepicker@1.11.0/dist/datepicker.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/datepicker@1.11.0/dist/datepicker.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #3498db;
+            color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #219653;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Appointment Form</h1>
+    </header>
+
+    <section>
+        <form action="process-appointment.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+            <!-- The pattern attribute enforces a 10-digit number -->
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" class="datepicker-here" data-language="en" required>
+
+            <label for="time">Preferred Time (CST):</label>
+            <select id="time" name="time" required>
+                <option value=null>Select</option>
+                <option value="08:30 AM">08:30 AM</option>
+                <option value="03:30 PM">03:30 PM</option>
+                <option value="07:00 PM">07:00 PM</option>
+            </select>
+
+            <label for="purpose">Purpose of Appointment:</label>
+            <textarea id="purpose" name="purpose" rows="4" required></textarea>
+            <br>
+            <button type="submit">Submit Appointment</button>
+        </form>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const dateInput = document.getElementById('date');
+            datepicker(dateInput, {
+                language: 'en',
+                minDate: new Date(), // Restrict selection to future dates
+                dateFormat: 'yyyy-mm-dd',
+            });
+        });
+
+    </script>
+</body>
+
+</html>
